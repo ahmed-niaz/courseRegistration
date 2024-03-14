@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import bookmark from "../../assets/icons/bookmark.png";
 import dollar from "../../assets/icons/dollarSign.svg";
-const Course = ({ crs }) => {
+const Course = ({ crs, handleCourseSelection }) => {
   console.log(crs);
   const { photo, name, description, price, credit } = crs;
   return (
@@ -18,12 +18,15 @@ const Course = ({ crs }) => {
             <button><img src={bookmark} alt="" /></button>
             <p>Credit : {credit}</p>
           </div>
+          <button className="btn w-full mt-4 bg-[#2F80ED] text-2xl font-bold hover:bg-black hover:text-white" onClick={()=>handleCourseSelection(crs)}>Select</button>
         </div>
+       
       </div>
     </main>
   );
 };
 Course.propTypes = {
   crs: PropTypes.array,
+  handleCourseSelection:PropTypes.func,
 };
 export default Course;
