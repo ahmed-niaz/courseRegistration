@@ -1,9 +1,3 @@
-# React + Vite
+# CourseRegistration
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# courseRegistration
+The landing page for course registration is exclusively optimized for mobile devices and offers complete functionality. It features a list of available courses from which users can select their desired options. However, there are certain limitations to note: users are allotted only 21 credits, and they can select only one course at a time. Additionally, prompts will appear if a user attempts to add the same course twice or exceeds the 21-credit limit.
